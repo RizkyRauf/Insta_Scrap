@@ -1,0 +1,48 @@
+2023-11-10 01:06:30,855 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 01:08:11,194 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 01:08:18,441 - config.logings - ERROR - Error extracting username
+2023-11-10 01:08:18,805 - config.logings - ERROR - Error extracting post content
+2023-11-10 01:08:19,057 - config.logings - ERROR - Error extracting post date
+2023-11-10 01:08:19,085 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 01:09:20,550 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 01:35:45,209 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 01:36:40,459 - config.logings - INFO - Comments: 0, Usernames: 0, Likes: 15, Dates: 15, Links: 20
+2023-11-10 01:36:40,460 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 01:36:43,373 - config.logings - ERROR - Error extracting username
+2023-11-10 01:36:43,848 - config.logings - ERROR - Error extracting post content
+2023-11-10 01:36:44,963 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 01:37:34,173 - config.logings - INFO - Comments: 0, Usernames: 0, Likes: 8, Dates: 8, Links: 9
+2023-11-10 01:37:34,174 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 01:37:36,576 - config.logings - ERROR - Error extracting username
+2023-11-10 01:37:36,658 - config.logings - ERROR - Error extracting post content
+2023-11-10 01:37:42,414 - config.logings - INFO - Data has been saved in the folder output_data with the file name data_instagram_2023-11-10.xlsx
+2023-11-10 01:42:35,113 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 01:43:29,663 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 01:43:35,249 - config.logings - ERROR - Error extracting username
+2023-11-10 01:43:38,985 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 01:44:23,226 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 01:45:00,959 - config.logings - INFO - Data has been saved in the folder output_data with the file name data_instagram_2023-11-10.xlsx
+2023-11-10 02:26:11,691 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 02:26:14,031 - config.logings - ERROR - Error extracting username
+2023-11-10 02:26:14,211 - config.logings - ERROR - Error extracting post content
+2023-11-10 02:26:14,304 - config.logings - ERROR - Error extracting post date
+2023-11-10 02:26:14,304 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 02:27:03,383 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 02:27:08,272 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 02:27:49,246 - config.logings - INFO - Data has been saved in the folder output_data with the file name data_instagram_2023-11-10.xlsx
+2023-11-10 02:54:42,922 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 02:54:47,372 - config.logings - ERROR - Error extracting username
+2023-11-10 02:54:47,487 - config.logings - ERROR - Error extracting post content
+2023-11-10 02:54:47,588 - config.logings - ERROR - Error extracting post date
+2023-11-10 02:54:47,588 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-10 02:56:17,036 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 02:56:24,392 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-10 02:57:28,799 - config.logings - INFO - Data has been saved in the folder output_data with the file name data_instagram_2023-11-10.xlsx
+2023-11-12 21:09:50,420 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-12 21:09:59,957 - config.logings - ERROR - Error extracting username
+2023-11-12 21:10:00,078 - config.logings - ERROR - Error extracting post content
+2023-11-12 21:10:00,224 - config.logings - ERROR - Error extracting post date
+2023-11-12 21:10:00,224 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CytMIPJS6ch
+2023-11-12 21:11:03,337 - config.logings - INFO - Extracting post from link: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-12 21:11:06,735 - config.logings - INFO - Extracting comments from post: https://www.instagram.com/p/CyygMRpyhxi
+2023-11-12 21:11:48,202 - config.logings - INFO - Data has been saved in the folder output_data with the file name data_instagram_2023-11-12.xlsx
