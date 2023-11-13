@@ -2,16 +2,19 @@ import os
 from datetime import datetime
 import pandas as pd
 from get_cookies import InstagramLogin
-from untils.comment_extraction import CommentExtractor
-from untils.post_extraction import PostExtractor
+from util.comment_extraction import CommentExtractor
+from util.post_extraction import PostExtractor
 from config.logings import initialize_logging
+
+# from untils.driver_setup import setup_driver
 import logging
+
 
 class InstagramScraper:
     def __init__(self, driver_path, log_level=logging.INFO):
         self.driver_path = driver_path
         self.log_level = log_level
-        self.logger = initialize_logging('logs/instagram_scraper.log', self.log_level)
+        self.logger = initialize_logging("logs/instagram_scraper.log", self.log_level)
 
     def login(self):
         self.instagram_login = InstagramLogin(self.driver_path)
@@ -34,10 +37,12 @@ class InstagramScraper:
                     "comments": [data_post["comments"][0]] + data_comments["comments"],
                     "likes": ["0"] + data_comments["likes"],
                     "links": [data_post["links"][0]] + data_comments["links"],
-                    "type": ["post"] + ["comment"] * len(data_comments["usernames"])
+                    "type": ["post"] + ["comment"] * len(data_comments["usernames"]),
                 }
 
-                df_combined = pd.concat([df_combined, pd.DataFrame(data_combined)], ignore_index=True)
+                df_combined = pd.concat(
+                    [df_combined, pd.DataFrame(data_combined)], ignore_index=True
+                )
 
         return df_combined
 
@@ -48,8 +53,10 @@ class InstagramScraper:
         current_datetime = datetime.now().strftime("%Y-%m-%d")
         xlsx_file_name = f"data_instagram_{current_datetime}.xlsx"
         xlsx_file_path = os.path.join(output_folder, xlsx_file_name)
-        df_combined.to_excel(xlsx_file_path, index=False, engine='openpyxl')
-        self.logger.info(f"Data has been saved in the folder {output_folder} with the file name {xlsx_file_name}")
+        df_combined.to_excel(xlsx_file_path, index=False, engine="openpyxl")
+        self.logger.info(
+            f"Data has been saved in the folder {output_folder} with the file name {xlsx_file_name}"
+        )
 
     def run(self, post_ids):
         self.login()
@@ -57,8 +64,30 @@ class InstagramScraper:
         self.save_data_to_excel(df_combined)
         self.instagram_login.close()
 
+
+# def jalankan(id_post: str, path_chrome: str) -> None:
+#     """
+#     jalankan semua sistem
+#
+#     Args:
+#         id_post: post yang kamu coba
+#         path_chrome: path dimana chromedriver kamu
+#     """
+#     if path_chrome != "untils\/chromedriver":
+#         path_chrome = path_chrome
+#     else:
+#         if os.info == "win32":
+#             setup_driver()
+#         else:
+#             setup_driver_linux()
+#     driver_path = path_chrome
+#     post_ids = id_post
+#     scraper = InstagramScraper(driver_path)
+#     scraper.run(post_ids)
+
+
 if __name__ == "__main__":
-    driver_path = 'C:\Driver\chromedriver.exe'
+    driver_path = "C:\Driver\chromedriver.exe"
     post_ids = ["CytMIPJS6ch", "CyygMRpyhxi"]
     scraper = InstagramScraper(driver_path)
     scraper.run(post_ids)
