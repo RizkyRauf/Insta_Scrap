@@ -1,0 +1,14 @@
+__pycache__/
+__pycache__
+.Python
+dist/
+eggs/
+.eggs/
+lib/
+*.egg.info/
+*installed.cfg
+
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
